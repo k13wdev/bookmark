@@ -1,0 +1,19 @@
+<article class="tab-card {{classMod}}" data-tabs-target="{{tabsTarget}}">
+  <div class="tab-card__image">
+    <img src="{{imgSrc}}" alt="{{imgAlt}}">
+  </div>
+
+  <include src="src/blocks/components/title/title.html" locals='{
+    "h": "h3",
+    "classMod": "tab-card__title",
+    "text": "{{cardTitle}}"
+  }'></include>
+  <include src="src/blocks/components/text/text.html" locals='{
+    "classMod": "text--secondary tab-card__text",
+    "text": "{{cardText}}"
+  }'></include>
+  <include src="src/blocks/components/button/button.html" locals='{
+    "classMod": "button--blue tab-card__button",
+    "text": "{{textButton}}"
+  }'></include>
+</article>

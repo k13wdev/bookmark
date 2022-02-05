@@ -1,0 +1,27 @@
+//подключение шрифта
+//@font-face {
+//  font-family: 'name';
+//  font-style: style;
+//  font-weight: weight;
+//  src: local('name'), 
+//       url('../fonts/name.woff2') format('woff2'),
+//       url('../fonts/name.woff') format('woff');
+//       @include font-face($fontFamily: myFont, $fontFamily, $fontStyle, $woffFileSrc: 'myFont.woff', $woff2FileSrc:   'myFont.woff2');
+//} 
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: sans-serif;
+  font-weight: 400;
+  src: url('../fonts/rubik-400.woff2') format('woff2'),       
+       url('../fonts/rubik-400.woff') format('woff');
+      
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: sans-serif;
+  font-weight: 500;
+  src: url('../fonts/rubik-500.woff2') format('woff2'),       
+       url('../fonts/rubik-500.woff') format('woff');
+}

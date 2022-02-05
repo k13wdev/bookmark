@@ -1,0 +1,14 @@
+.features {
+  &__wrapper {
+    @include column-center;
+  }
+
+  &__title {
+    margin-block-end: 0.875rem;
+  }
+
+  &__text {
+    margin-block-end: 2.15rem;
+    max-width: 47ch;
+  }
+}

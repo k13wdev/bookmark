@@ -1,0 +1,36 @@
+<section class="pricing page-main__pricing">
+  <div class="pricing__wrapper _container">
+
+    <include src="src/blocks/components/title/title.html" locals='{
+      "h": "h2",
+      "classMod": "pricing__title",
+      "text": "Download the extension"
+    }'></include>
+
+    <include src="src/blocks/components/text/text.html" locals='{
+      "classMod": "text--secondary pricing__text",
+      "text": "We`ve got more browsers in the pipeline. Please do let us know if you`ve got a favourite you`d like us prioritize."
+    }'></include>
+
+    <div class="pricing__card-wrapper">
+      <include src="src/blocks/components/pricing-card/pricing-card.html" locals='{
+        "imgSrc": "./img/logo-chrome.svg",
+        "imgAlt": "",
+        "cardTitle": "Add to Chrome",
+        "cardText": "Minimum version 62"
+      }'></include>
+      <include src="src/blocks/components/pricing-card/pricing-card.html" locals='{
+        "imgSrc": "./img/logo-firefox.svg",
+        "imgAlt": "",
+        "cardTitle": "Add to Firefox",
+        "cardText": "Minimum version 55"
+      }'></include>
+      <include src="src/blocks/components/pricing-card/pricing-card.html" locals='{
+        "imgSrc": "./img/logo-opera.svg",
+        "imgAlt": "",
+        "cardTitle": "Add to Opera",
+        "cardText": "Minimum version 46"
+      }'></include>
+    </div>
+  </div>
+</section>

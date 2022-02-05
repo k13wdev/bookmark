@@ -1,0 +1,22 @@
+.site-list {
+  @include list-reset;
+  
+  &__link {
+    @include link-reset;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: all .35s ease;
+
+    &:hover {
+      color: hsl(var(--clr-primary-soft-red))
+    }
+  }
+
+  @media (min-width: 64em) {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
+}

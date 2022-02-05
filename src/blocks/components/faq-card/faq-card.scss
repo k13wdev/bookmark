@@ -1,0 +1,43 @@
+.faq-card {
+  position: relative;
+  overflow-y: hidden;
+  padding-block: 1.25rem;
+  font-size: clamp(0.785rem, 1.25vw, 1rem);
+  font-weight: 400;
+  line-height: 140%;
+  border-bottom: 0.1rem solid hsl(var(--clr-neutral-grayish-blue)/0.25);
+
+  &__button {
+    @include button-reset;
+    justify-content: space-between;
+    width: 100%;
+
+    svg {
+      pointer-events: none;
+    }
+  }
+
+  &__question {
+    margin: 0;
+    transition: all .35s ease;
+    pointer-events: none;
+  }
+
+  &__answer {
+    display: none;
+    margin-block-end: 0;
+    color: hsl(var(--clr-neutral-grayish-blue));
+  }
+
+  &__answer[data-answer="true"] {
+    display: block;
+  }
+
+  &__button:hover &__question {
+    color: hsl(var(--clr-primary-soft-red));
+  }
+
+  @media (min-width: 64em) {
+    padding-inline-end: 1rem;
+  }
+}

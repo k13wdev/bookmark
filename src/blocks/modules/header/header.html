@@ -1,0 +1,20 @@
+<header class="page-header ">
+  <div class="page-header__wrapper _container">
+    <include src="src/blocks/components/logo/logo.html" locals='{
+      "classMod": ""
+    }'></include>
+
+    <nav class="navigation navigation--header">
+      <button type="button" class="navigation__toggle" data-element="main-navigation-toggle">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="18" height="18">
+          <use xlink:href="#icon-hamburger"></use>
+        </svg>
+      </button>
+      <div class="navigation__wrapper" data-element="main-navigation" data-visible="false">  
+        <include src="src/blocks/components/site-list/site-list.html"></include>
+        <include src="src/blocks/components/user-list/user-list.html"></include>
+      </div>
+    </nav>
+  </div>
+</header>

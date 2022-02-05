@@ -1,0 +1,19 @@
+.social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-inline-end: 2rem;
+  }
+
+  &__link {
+    color: currentColor;
+    transition: all .35s ease;
+  }
+
+  &__link:hover {
+    color: hsl(var(--clr-primary-soft-red));
+  }
+}

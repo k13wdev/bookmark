@@ -1,0 +1,12 @@
+.user-list {
+  @include list-reset;
+
+  &__item {
+    width: 100%;
+  }
+
+  @media (min-width: 64em) {
+    display: flex;
+    width: 25%; 
+  }
+}

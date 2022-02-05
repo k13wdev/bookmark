@@ -1,0 +1,24 @@
+.page-header {
+  position: relative;
+  color: hsl(var(--clr-neutral-very-dark-blue));
+  transition: background-color 0.45s ease-out;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5rem;
+  }
+
+  @media (max-width: 63.999em) {
+    &--isOpen-mobile-menu {
+      color: white;
+      background-color: hsl(var(--clr-neutral-very-dark-blue)/0.9);
+    }
+  }
+
+  @media (min-width: 64em) {
+    &__wrapper {
+      height: 7.25rem;
+    }
+  }
+}

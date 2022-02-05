@@ -1,0 +1,49 @@
+:root {
+  box-sizing: border-box;
+  font-size: 1.125rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+._container {
+  /* background-color: hsl(25, 100%, 50%, 0.4); */
+  padding-inline: clamp(1.75rem, 5vw, 4rem);
+  margin: 0 auto;
+  width: clamp(375px, 87%, 1440px);
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  font-family: var(--ff-primary);
+  color: hsl(var(--clr-neutral-very-dark-blue));
+}

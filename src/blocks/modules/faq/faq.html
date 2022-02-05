@@ -1,0 +1,41 @@
+<section class="faq page-main__faq">
+  <div class="faq__wrapper _container">
+    <include src="src/blocks/components/title/title.html" locals='{
+      "h": "h2",
+      "classMod": "faq__title",
+      "text": "Frequently asked questions"
+    }'></include>
+    <include src="src/blocks/components/text/text.html" locals='{
+      "classMod": "text--secondary faq__text",
+      "text": "Here are some of our FAQs. If you have any other questions you`d like answered please feel free to email us."
+    }'></include>
+
+    <div class="faq__card-wrapper" data-accordion-items="faq">
+      <include src="src/blocks/components/faq-card/faq-card.html" locals='{
+        "visible": "false",
+        "question": "Whats is Bookmark?",
+        "answer": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus laudantium quos nemo a! Ex, nisi?"
+      }'></include>
+      <include src="src/blocks/components/faq-card/faq-card.html" locals='{
+        "visible": "false",
+        "question": "How can I request a new browser?",
+        "answer": ""
+      }'></include>
+      <include src="src/blocks/components/faq-card/faq-card.html" locals='{
+        "visible": "false",
+        "question": "Is there a mobile app?",
+        "answer": ""
+      }'></include>
+      <include src="src/blocks/components/faq-card/faq-card.html" locals='{
+        "visible": "false",
+        "question": "What about other Chromium browsers?",
+        "answer": ""
+      }'></include>
+    </div>
+    <include src="src/blocks/components/button/button.html" locals='{
+      "visible": "false",
+      "classMod": "button--blue faq__button",
+      "text": "More Info"
+    }'></include>
+  </div>
+</section>

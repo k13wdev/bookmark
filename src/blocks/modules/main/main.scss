@@ -1,0 +1,47 @@
+.page-main {
+  &__intro {
+    margin-block-start: 2.35rem;
+  }
+
+  &__features {
+    margin-block-start: 8.35rem;
+  }
+
+  &__pricing {
+    margin-block-start: 8.25rem;
+  }
+
+  &__faq {
+    margin-block-start: 6.25rem;
+  }
+
+  &__subscribe {
+    margin-block-start: 6.75rem;
+  }
+
+  &__footer {
+
+  }
+
+  @media (min-width: 64em) {
+    &__intro {
+      margin-block-start: 4rem;
+    }
+
+    &__features {
+      margin-block-start: 10rem;
+    }
+
+    &__pricing {
+      margin-block-start: 13.5rem;
+    }
+
+    &__faq {
+      margin-block-start: 8.45rem;
+    }
+
+    &__subscribe {
+      margin-block-start: 8.5rem;
+    }
+  }
+}

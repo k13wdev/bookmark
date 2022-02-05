@@ -1,0 +1,30 @@
+<section class="intro page-main__intro">
+  <div class="intro__wrapper _container">
+    <div class="intro__image">
+      <img src="./img/illustration-hero.svg" alt="" width="312" height="208">
+    </div>
+    
+    <include src="src/blocks/components/text/text.html" locals='{
+      "classMod": "text--bold text--primary intro__title",
+      "text": "A simple bookmark manager"
+    }'></include>
+    
+    <include src="src/blocks/components/text/text.html" locals='{
+      "classMod": "text--secondary intro__text",
+      "text": "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
+    }'></include>
+    
+    
+    <div class="intro__button-wrapper">
+      <include src="src/blocks/components/button/button.html" locals='{
+        "classMod": "button--blue intro__button",
+        "text": "Get it on Chrome"
+      }'></include>
+
+      <include src="src/blocks/components/button/button.html" locals='{
+        "classMod": "intro__button",
+        "text": "Get it on Firefox"
+      }'></include>    
+    </div>
+  </div>
+</section>

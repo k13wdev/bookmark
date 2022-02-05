@@ -1,0 +1,35 @@
+.text {
+  margin: 0;
+  font-size: clamp(0.85rem, 1.25vw, 1rem);
+  font-weight: 400;
+  line-height: 155% /* 170% */;
+  text-align: center;
+
+  &--bold {
+    font-size: clamp(1.65rem, 3.28125vw, 2.625rem);
+    font-weight: 500;
+    line-height: 140% /* 110% */;
+    text-transform: capitalize;
+  }
+
+  &--primary {
+    color: hsl(var(--clr-neutral-very-dark-blue));
+  }
+
+  &--secondary {
+    color: hsl(var(--clr-neutral-grayish-blue));
+  }
+  
+  &--small {
+    font-size: 0.85rem;
+  }
+
+  @media (min-width: 64em) {
+
+    line-height: 170%;
+  
+    &--bold {
+      line-height: 110%;
+    } 
+  }
+} 
