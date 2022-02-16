@@ -17,24 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tab-card--active')
   }
 
-  const windowInnerWidth = window.innerWidth 
-  
-  if(windowInnerWidth <= 1023) {
-    document.querySelector('[data-mobile-item=""]>button').classList.remove('button--red')
-    document.querySelector('[data-mobile-item=""]>button').classList.add('button--transparent')
-
-  }
-
   const mainNavigation = document.querySelector('[data-element="main-navigation"]')
   const mainNavigationToggle  = document.querySelector('[data-element="main-navigation-toggle"]')
+  const body = document.querySelector('body')
   
   mainNavigationToggle.addEventListener('click', () => {
     if(mainNavigation.dataset.visible === 'false') {
       mainNavigation.dataset.visible = 'true'
       mainNavigation.closest('header').classList.add('page-header--isOpen-mobile-menu')
+      body.style.overflowY = 'hidden'
     } else if(mainNavigation.dataset.visible === 'true') {
       mainNavigation.dataset.visible = 'false'
       mainNavigation.closest('header').classList.remove('page-header--isOpen-mobile-menu')
+      body.style.overflowY = 'scroll'
     }
   })
 

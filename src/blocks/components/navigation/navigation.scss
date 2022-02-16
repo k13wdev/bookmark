@@ -1,4 +1,5 @@
 .navigation {
+
   &__toggle {
     @include button-reset;
     color: currentColor;
@@ -7,6 +8,12 @@
     svg {
       pointer-events: none;
     }
+  }
+
+  &--header &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
   }
 
   &--footer .site-list {
@@ -20,12 +27,10 @@
 
   @media (max-width: 63.999rem) {
     &--header &__wrapper {
-      position: absolute;
-      top: 100%;  
-      right: 0;
-      left: 0;
-      width: 100%;
-      height: calc(100vh - 5.5rem);
+      padding-inline: clamp(5rem, 10vw, 10rem);
+      position: fixed;
+      inset: 5.5rem 0 0 0;
+      flex-direction: column;
       background-color: hsl(var(--clr-neutral-very-dark-blue)/0.9);
       transform: translateX(100%);
       transition: transform 0.35s ease-out;
@@ -37,15 +42,13 @@
   }
 
   @media (min-width: 64em) {
-    width: 41.25%;
 
     &__toggle {
       display: none;
     }
     
     &--header &__wrapper {
-      display: flex;
-      justify-content: space-between;
+      flex-direction: row;
       align-items: center;
     }
 

@@ -1,7 +1,7 @@
 {
   "name": "bookmark",
   "version": "1.0.0",
-  "description": "Сайт Cat Energy",
+  "description": "bookmark",
   "main": "",
   "scripts": {
     "dev": "gulp dev",
